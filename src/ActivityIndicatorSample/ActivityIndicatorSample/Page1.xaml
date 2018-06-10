@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActivityIndicatorSample.Page1">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0"/>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="ActivityIndicator1" IsRunning="false" />
+            <Button x:Name="Button1" Text="Button1" Clicked="Button1_Clicked" />
+            <Button x:Name="ButtonClose" Text="Close" Clicked="ButtonClose_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
